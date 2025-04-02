@@ -4,7 +4,7 @@ Kaitlyn Thornton
 498862
 KThornton767
 
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 Rubric:
 
 Skate Storefront
@@ -27,7 +27,7 @@ Functionality(70):
 	10 - Items purchased go into a cart that can be viewed on a separate page
 	10 - Users can register/log in/logout
 	5  - Users can leave 0-5 star ratings on items
-	10 - Database contains Users, Purchases, Items with the neccesary column
+	10 - Database contains Users, Purchases, Items with the neccesary columns to support the above functionality
 
 Best Practices (5):
 	3 - Code well formatted
