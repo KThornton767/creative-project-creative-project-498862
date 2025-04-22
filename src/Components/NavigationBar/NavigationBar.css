@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.logoicon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoicon p{
+    color: darkslateblue;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    gap: 50px;
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navmenu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.navmenu hr{
+    border: none;
+    width: 80%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: lightblue;
+
+}
+
+.navlogincart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.navlogincart button{
+    width: 150px;
+    height: 55px;
+    outline: none;
+    border: 1px solid lightblue;
+    border-radius: 75px; 
+    color: gray;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    cursor: pointer;
+}
+
+.navcartnumb{
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    font-size: 14px;
+    color: white;
+
+}
