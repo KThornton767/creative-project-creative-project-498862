@@ -1,5 +1,6 @@
 import React from 'react';
 import './Item.css';
+import { Link } from 'react-router-dom';
 
 const Item = (props) => {
   return (
@@ -9,7 +10,7 @@ const Item = (props) => {
         <div className="item-price">
             {props.item_price} dollars
         </div>
-        <button className="itembuyer">Buy Now</button>
+        <Link to='/item' style={{textDecoration: 'none'}}><button className="itembuyer">Buy Now</button></Link>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Item = () => {
+const Item = (id) => {
   return (
     <div>Item</div>
   )
