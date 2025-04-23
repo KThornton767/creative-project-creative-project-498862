@@ -4,14 +4,13 @@ const db = require("../../backend/db.js");
 
 
 const ShopPage = () => {
-
-  db.getAllItems(10)
-    .then(data => res.json(data)) // if successful
-    .catch(err => res.status(500).json(err)); // if error
+  let itemsJson = db.getAllItems();
 
   return (
     <div className="all-items">
-      
+      {itemsJson.map((items,i)=>{
+        return <Item key={i} id={items.id} name={items.name} image={items.image} price={items.price}></Item>
+      })}
     </div>
   )
 }

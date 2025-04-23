@@ -15,17 +15,15 @@ const pool = mysql.createPool({
   database: process.env.MYSQL_DB,
 });
 
-function getAllItems(limit = 100) {
-  return new Promise((resolve, reject) => {
-      const sql = `SELECT * FROM items LIMIT ?`;
-      pool.query(sql, [limit], function (err, results, fields) {
-          if (err) {
-              return reject(err);
-          }
+pool.on('acquire', function (connection) {
+  console.log('Connection %d acquired', connection.threadId);
+});
 
-          return resolve(results);
-      });
-  });
+
+async function getAllItems(limit = 100) {
+    const sql = `SELECT * FROM items LIMIT ?`;
+    let itemsData = await pool.query(sql, [limit]);
+    return itemsData;
 }
 
 function getCartById(id) {
