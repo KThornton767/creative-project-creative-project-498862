@@ -1,19 +1,20 @@
 .biobox{
-    width: 100%;
+    width: 400px;
     height: 80vh;
     background-color: rgb(232, 230, 254);
     padding-top: 100px;
+    margin: auto;
 }
 
 .profilepic{
     display: flex;
     background-color: white;
+    max-width: 400px;
     margin: auto;
-    padding: 40px 60px;
 }
 
 .textbox{
-    color: grey;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     background-color: white;
@@ -26,4 +27,8 @@
     width: 600px;
     margin: auto;
     height: 100%;
+}
+
+.about-page{
+    background-color: rgb(232, 230, 254);
 }

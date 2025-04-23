@@ -1,13 +1,17 @@
 .item{
     width: 350px;
+    margin-top: 20px;
 }
 
 .item p{
     margin: 6px 0px;
+    font-size: 18px;
+    font-weight: 500;
+
 }
 
-.item-prices{
+.item-price{
     display: flex;
     gap: 20px;
-    color: gray;
+    color: red;
 }

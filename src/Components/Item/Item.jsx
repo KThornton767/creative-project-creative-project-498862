@@ -7,8 +7,9 @@ const Item = (props) => {
         <img src={props.image} alt="" />
         <p>{props.name}</p>
         <div className="item-price">
-            {props.item_price}
+            {props.item_price} dollars
         </div>
+        <button className="itembuyer">Buy Now</button>
     </div>
   )
 }

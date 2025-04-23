@@ -1,11 +1,12 @@
 import React from 'react';
 import './CSS/About.css';
 
-import logo from '../Components/Assests/logo.png'
+import logo from '../Components/Assests/profile.jpg'
 
 const About = () => {
   return (
-    <div className='biobox'>
+    <div className="about-page">
+      <div className='biobox'>
       <img src={logo} alt="" className="profilepic" />
       <div className="textbox">
       <p className="about-seller">
@@ -14,6 +15,7 @@ const About = () => {
       </div>
 
     </div>
+    </div>   
   )
 }
 
