@@ -1,6 +1,7 @@
 require("dotenv").config();
 const mysql = require("mysql");
 const saltRounds = 10;
+const bcrypt = require("bcrypt");
 
 const host = process.env.MYSQL_HOST;
 const database = process.env.MYSQL_DB;
@@ -56,7 +57,12 @@ function getUserByUsername(username) {
   });
 }
 
-function addUser(username,email,passhash){
+async function addUser(data){
+
+  const username = data.username;
+  const email = data.email;
+  const passhash = await bcrypt.hash(credentials.password,13);
+
   return new Promise((resolve,reject)=> {
       const sql =
       "INSERT INTO users (id, username, email, passhash) values (NULL, ?, ?, ?)"

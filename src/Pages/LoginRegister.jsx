@@ -1,8 +1,10 @@
 import React from 'react'
 import './CSS/LoginRegister.css'
+import ApiClient from '../axios.js'
 
 
 const LoginRegister = () => {
+
   return (
     <div class="loginregister">
       <div class="loginbox">
@@ -12,8 +14,8 @@ const LoginRegister = () => {
           <input type="text" placeholder='Email Address'></input>
           <input type="text" placeholder='Password'></input>
         </div>
-        <button>Continue</button>
-        <p className='loginswitch'>Already signed up? <span>Login here!</span>  </p> 
+        <button className="registerButton" id="registerButton" onclick="ApiClient.register()">Continue</button>
+        <p className='loginswitch'>Already signed up? <button>Login here!</button>  </p> 
       </div>
     </div>
   )
